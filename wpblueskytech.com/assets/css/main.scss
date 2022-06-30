@@ -7,16 +7,19 @@
   }
 }
 .header {
-  width: 100%;
+  width: 100% !important;
   height: 40px;
   background-image: url(https://wpblueskytech.com/orfarm/wp-content/uploads/2022/04/bg.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
   align-items: center;
-  .my-container {
+  .container {
     .row {
       .header-left {
+        @media (max-width: 992px) {
+          display: none;
+        }
         ul {
           display: flex;
           margin: 0;
@@ -41,6 +44,9 @@
           font-size: 13px;
           color: #ffffff;
           margin: 0;
+          @media (max-width: 992px) {
+            text-align: center;
+          }
           span {
             color: #ffb800;
           }
@@ -50,18 +56,41 @@
   }
 }
 
-.my-container {
+.container {
   .header-bottom {
     height: 81px;
     width: 100%;
     .row {
+      height: 100%;
+      .menubar {
+        @media (max-width: 992px) {
+          height: 100%;
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+        }
+
+        i {
+          font-size: 24px;
+          color: #2d2a6e;
+        }
+      }
+
       .icons-col {
+        height: 100%;
         .header-icons {
           height: 100%;
           display: flex;
           align-items: center;
-          i {
-            padding: 0 5px;
+          justify-content: space-around;
+          span {
+            background: #fff3ec;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
         }
       }
@@ -69,6 +98,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @media (max-width: 992px) {
+          display: none;
+        }
         ul {
           display: flex;
           margin: 0;
@@ -83,7 +115,11 @@
           }
         }
       }
-      .col-2 {
+      .col-lg-2 {
+        @media (max-width: 992px) {
+          display: flex;
+          justify-content: center;
+        }
         .header-logo {
           width: 230px;
           height: 65px;
@@ -190,9 +226,13 @@
     }
   }
 }
-.my-container {
+.container {
   .row {
-    .col-4 {
+    .my-col-lg-4 {
+      @media (max-width: 992px) {
+        display: flex;
+        justify-content: center;
+      }
       .box {
         margin-top: 10px;
         width: 362px;
@@ -224,7 +264,6 @@
           transition: 0.3s linear;
           &:hover {
             margin-top: -10%;
-            // top: -10px;
           }
 
           img {
@@ -256,7 +295,12 @@
 .my-row {
   width: 96%;
   margin: 0 auto;
-  .col-2 {
+  .col-lg-2 {
+    @media (max-width: 992px) {
+      display: flex;
+      justify-content: center;
+    }
+
     .box {
       height: 240px;
       width: 162px;
@@ -295,7 +339,7 @@
   }
 }
 
-.my-container {
+.container {
   width: 80%;
   margin: 0 auto;
   .products-text-box {
@@ -371,7 +415,7 @@
   width: 100%;
   background-color: #f7f7f9;
   padding: 40px 0;
-  .my-container {
+  .container {
     .products-row {
       display: flex;
       justify-content: space-around;
@@ -477,7 +521,7 @@
 
 .footer {
   background: #2d2c6e;
-  .my-container {
+  .container {
     .my-row {
       border-bottom: 0.3px solid #4d5574;
       .col-3 {
