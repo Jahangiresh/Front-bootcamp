@@ -1,0 +1,638 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  hr {
+    color: gray;
+  }
+}
+.header {
+  width: 100%;
+  height: 40px;
+  background-image: url(https://wpblueskytech.com/orfarm/wp-content/uploads/2022/04/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  .my-container {
+    .row {
+      .header-left {
+        ul {
+          display: flex;
+          margin: 0;
+          padding: 0;
+          font-size: 13px;
+          justify-content: end;
+          .li-border {
+            border-right: 1px solid #4d5574;
+          }
+          li {
+            padding: 0 15px;
+            list-style: none;
+            a {
+              text-decoration: none;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+      .header-right {
+        p {
+          font-size: 13px;
+          color: #ffffff;
+          margin: 0;
+          span {
+            color: #ffb800;
+          }
+        }
+      }
+    }
+  }
+}
+
+.my-container {
+  .header-bottom {
+    height: 81px;
+    width: 100%;
+    .row {
+      .icons-col {
+        .header-icons {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          i {
+            padding: 0 5px;
+          }
+        }
+      }
+      .my-col-8 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ul {
+          display: flex;
+          margin: 0;
+
+          li {
+            list-style: none;
+            a {
+              color: #2d2a6e;
+              text-decoration: none;
+              padding: 0 15px;
+            }
+          }
+        }
+      }
+      .col-2 {
+        .header-logo {
+          width: 230px;
+          height: 65px;
+          padding: 10px 0;
+          img {
+            width: 120px;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
+}
+.larger-cover {
+  width: 100%;
+  height: 644px;
+  background: #f6f9fc;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .cover-text {
+    position: absolute;
+    z-index: 2;
+    left: 20%;
+    button {
+      padding: 0 50px;
+      height: 50px;
+      background: #96ae00;
+      color: white;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 90px;
+      transition: 0.3s linear;
+      &:hover {
+        background: #5d6b01;
+      }
+    }
+    p {
+      font-size: 16px;
+      color: #4d5574;
+    }
+    h1 {
+      color: #2d2a6e;
+      font-size: 65px;
+      font-family: "Quicksand";
+      font-weight: 800;
+      text-transform: capitalize;
+    }
+    span {
+      font-size: 16px;
+      color: #96ae00;
+
+      text-transform: uppercase;
+    }
+  }
+  .header-cover {
+    width: 100%;
+    height: 644px;
+    object-fit: cover;
+    background-image: url(https://img.freepik.com/free-photo/orange-fruits-white-background-citrus-fruits-low-calories-high-vitamin-c-fiber_51524-17586.jpg?w=1380);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+
+      left: 0;
+      top: 0;
+      /* From https://css.glass */
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      position: absolute;
+    }
+    img {
+      position: absolute;
+      z-index: 1;
+      right: 70px;
+      top: 70px;
+
+      animation-name: example;
+      animation-duration: 2s;
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+    }
+    @keyframes example {
+      0% {
+        top: 70px;
+      }
+      50% {
+        top: 100px;
+      }
+      100% {
+        top: 70px;
+      }
+    }
+  }
+}
+.my-container {
+  .row {
+    .col-4 {
+      .box {
+        margin-top: 10px;
+        width: 362px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .box-bottom {
+          text-align: center;
+
+          a {
+            color: #2d2a6e;
+            text-decoration: none;
+            font-family: "Quicksand";
+            font-size: 20px;
+            font-weight: 600;
+          }
+          p {
+            color: #4d5574;
+            font-size: 16px;
+            font-family: sans-serif;
+          }
+        }
+        .box-top {
+          height: 197px;
+          border-radius: 10px;
+          overflow: hidden;
+          transition: 0.3s linear;
+          &:hover {
+            margin-top: -10%;
+            // top: -10px;
+          }
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.product-select {
+  ul {
+    display: flex;
+    justify-content: center;
+    li {
+      list-style: none;
+      .my-active {
+        color: #96ae00;
+      }
+      a {
+        text-decoration: none;
+        color: #4d5574;
+        padding: 0 20px;
+      }
+    }
+  }
+}
+.my-row {
+  width: 96%;
+  margin: 0 auto;
+  .col-2 {
+    .box {
+      height: 240px;
+      width: 162px;
+
+      border: 1px solid rgb(221, 220, 220);
+      border-radius: 10px;
+      .product-box-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        padding: 0 30px;
+        a {
+          color: #2d2a6e;
+          text-transform: capitalize;
+          text-decoration: none;
+        }
+        span {
+          color: red;
+        }
+        .star-box {
+          color: orange;
+          font-size: 10px;
+        }
+      }
+      .box-top {
+        height: 135px;
+        padding: 0 10px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.my-container {
+  width: 80%;
+  margin: 0 auto;
+  .products-text-box {
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    span {
+      color: #96ae00;
+      font-family: "VT323", monospace;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0px;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 37px;
+      color: #2d2a6e;
+      letter-spacing: -0.5px;
+    }
+    p {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      color: #4d5574;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+  }
+
+  .row {
+    .col-lg-4 {
+      margin-top: 20px;
+      .product-box {
+        width: 376px;
+        height: 162px;
+        border: 1px solid #e3e3e3;
+        border-radius: 10px;
+        display: flex;
+        .product-box-right {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          padding: 20px 0;
+          a {
+            color: #2d2a6e;
+            text-transform: capitalize;
+            text-decoration: none;
+          }
+          span {
+            color: red;
+          }
+          .star-box {
+            color: orange;
+            font-size: 12px;
+          }
+        }
+        .product-box-left {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+.products {
+  width: 100%;
+  background-color: #f7f7f9;
+  padding: 40px 0;
+  .my-container {
+    .products-row {
+      display: flex;
+      justify-content: space-around;
+      .product-box {
+        width: 370px;
+        &:hover {
+          img {
+            transform: scale(1.2);
+          }
+        }
+        .products-box-bottom {
+          .products-box-bottom-third {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 600;
+            color: #96ae00;
+            margin-top: 10px;
+          }
+          .products-box-bottom-second {
+            margin: 5px 0 0;
+            color: #2d2a6e;
+            line-height: 1.2222;
+            font-size: 18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            word-break: break-word;
+            text-transform: capitalize;
+          }
+          .products-box-bottom-first {
+            display: flex;
+            align-items: center;
+            padding-top: 10px;
+            ul {
+              margin: 0;
+              display: flex;
+              margin-left: 20px;
+              gap: 20px;
+              text-transform: uppercase;
+              font-size: 12px;
+              font-weight: 500;
+              position: relative;
+              color: #79819c;
+            }
+            span {
+              --heading-font-weight: 500;
+              display: inline-flex;
+              align-items: center;
+              color: #96ae00;
+              font-weight: var(--heading-font-weight);
+              font-size: 12px;
+              text-transform: uppercase;
+            }
+          }
+        }
+        .products-box-top {
+          overflow: hidden;
+          width: 370px;
+          height: 237px;
+          border-radius: 10px;
+          img {
+            width: 100%;
+            border-radius: 10px;
+            transition: 300ms ease-in-out;
+          }
+        }
+      }
+    }
+    .products-text-box {
+      text-align: center;
+      padding: 10px;
+      span {
+        color: #96ae00;
+        font-family: "VT323", monospace;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0px;
+      }
+      h1 {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 37px;
+        color: #2d2a6e;
+        letter-spacing: -0.5px;
+      }
+      p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        color: #4d5574;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+    }
+  }
+}
+
+.footer {
+  background: #2d2c6e;
+  .my-container {
+    .my-row {
+      border-bottom: 0.3px solid #4d5574;
+      .col-3 {
+        .box {
+          margin-top: 40px;
+          padding: 5px;
+          text-align: center;
+          color: white;
+          h3 {
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+          }
+          p {
+            color: #b0afcc;
+            font-size: 14px;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+    .row {
+      .col {
+        .text-box {
+          padding: 60px 0;
+          ul {
+            margin: 0;
+            padding: 0;
+            color: #b0afcc;
+            font-size: 16px;
+            line-height: 20px;
+            li {
+              font-size: 16px;
+              list-style: none;
+            }
+          }
+          span {
+            color: #b0afcc;
+          }
+          h4 {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+          }
+          p {
+            color: #b0afcc;
+            font-size: 16px;
+            margin-bottom: 20px;
+            span {
+              color: #96ae00;
+            }
+          }
+          .social-icons {
+            color: white;
+          }
+        }
+      }
+      .col-2 {
+        .text-box {
+          padding: 60px 0;
+          ul {
+            margin: 0;
+            padding: 0;
+            color: #b0afcc;
+            font-size: 16px;
+            line-height: 20px;
+            li {
+              font-size: 16px;
+              list-style: none;
+            }
+          }
+          span {
+            color: #b0afcc;
+          }
+          h4 {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+          }
+          p {
+            color: #b0afcc;
+            font-size: 16px;
+            margin-bottom: 20px;
+            span {
+              color: #96ae00;
+            }
+          }
+          .social-icons {
+            color: white;
+          }
+        }
+      }
+      .col-4 {
+        .text-box {
+          padding: 60px 0;
+          ul {
+            margin: 0;
+            padding: 0;
+            color: #b0afcc;
+            font-size: 16px;
+            line-height: 20px;
+            li {
+              font-size: 16px;
+              list-style: none;
+            }
+          }
+          span {
+            color: #b0afcc;
+          }
+          h4 {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+          }
+          p {
+            color: #b0afcc;
+            font-size: 16px;
+            margin-bottom: 20px;
+            span {
+              color: #96ae00;
+            }
+          }
+          .social-icons {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+.bottom-footer {
+  background-color: #2d2a6e;
+  border-top: 1px solid #4d5574;
+  .my-df {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .visa-icons {
+      color: #b0afcc;
+      font-size: 20px;
+    }
+    p {
+      padding: 35px 0;
+      color: #b0afcc;
+      span {
+        color: #96ae00;
+      }
+    }
+  }
+}
