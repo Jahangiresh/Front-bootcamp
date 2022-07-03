@@ -68,6 +68,29 @@
           &__navbar {
             display: flex;
             height: 100%;
+            .blocks:hover {
+              .blocks__hover {
+                opacity: 1;
+                visibility: visible;
+                top: 74px;
+              }
+            }
+
+            .blog:hover {
+              .blog__hover {
+                opacity: 1;
+                visibility: visible;
+                top: 74px;
+              }
+            }
+
+            .projects:hover {
+              .projects__hover {
+                opacity: 1;
+                visibility: visible;
+                top: 74px;
+              }
+            }
             .pages:hover {
               .pages__hover {
                 opacity: 1;
@@ -96,10 +119,105 @@
               &:hover {
                 color: #3f78e0;
               }
+              .blocks__hover {
+                width: 1290px;
+                height: 584px;
+                backdrop-filter: blur(25px) saturate(80%);
+                -webkit-backdrop-filter: blur(25px) saturate(80%);
+                background-color: rgba(17, 25, 40, 0.71);
+                border-radius: 12px;
+                border: 1px solid rgba(255, 255, 255, 0.125);
+
+                position: absolute;
+                z-index: 3;
+                top: 104px;
+                left: -760px;
+                opacity: 0;
+                visibility: hidden;
+                padding: 40px;
+                transition: 200ms ease-in-out;
+                .row {
+                  .col-2 {
+                    background: rgba(255, 255, 255, 0.096);
+                    border-radius: 10px;
+                    transition: 150ms ease-in-out;
+                    width: 185px;
+                    margin: 10px;
+                    &:hover {
+                      margin-top: -7px;
+                    }
+                    img {
+                      width: 100%;
+                    }
+                    p {
+                      color: #fff;
+                      margin-top: 10px;
+                    }
+                  }
+                }
+              }
+              .blog__hover {
+                width: 200px;
+
+                background: white;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                z-index: 3;
+                padding: 20px;
+                border-radius: 10px;
+                position: absolute;
+                top: 104px;
+                opacity: 0;
+                visibility: hidden;
+
+                transition: 200ms ease-in-out;
+                ul {
+                  padding: 0;
+                  line-height: 33px;
+                  color: #343f52;
+                  li {
+                    list-style: none;
+                  }
+                }
+              }
+              .projects__hover {
+                width: 340px;
+
+                background: white;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                z-index: 3;
+                padding: 20px;
+                border-radius: 10px;
+                position: absolute;
+                top: 104px;
+                opacity: 0;
+                visibility: hidden;
+                transition: 200ms ease-in-out;
+                .row {
+                  .col-6-first {
+                    border-right: 1px solid #e3e3e3;
+                  }
+                  .col-6 {
+                    h4 {
+                      color: #3f78e0;
+                      font-size: 16px;
+                      font-weight: 600;
+                    }
+                    ul {
+                      padding: 0;
+                      line-height: 33px;
+                      color: #343f52;
+                    }
+                    li {
+                      list-style: none;
+                    }
+                  }
+                }
+              }
               .pages__hover {
                 width: 200px;
                 height: 308px;
-                background: whitesmoke;
+                background: white;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                 z-index: 3;
                 padding: 20px;
                 border-radius: 10px;
