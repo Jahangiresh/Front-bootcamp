@@ -31,3 +31,16 @@ $(".owl2").owlCarousel({
     },
   },
 });
+
+const header = document.querySelector(".header__bottom");
+
+document.addEventListener("scroll", () => {
+  if (scrollY >= 350) {
+    header.style.position = "fixed";
+    header.style.zIndex = "3";
+    header.style.top = "0";
+    header.style.backgroundColor = "white";
+  } else {
+    header.style.position = "static";
+  }
+});

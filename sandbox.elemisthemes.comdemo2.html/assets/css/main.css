@@ -57,6 +57,8 @@
 .header__bottom {
   height: 74px;
   width: 100%;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 .header__bottom__container {
@@ -104,6 +106,19 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
+}
+
+.header__bottom__container__nav__row__col__center__navbar .pages:hover .pages__hover {
+  opacity: 1;
+  visibility: visible;
+  top: 74px;
+}
+
+.header__bottom__container__nav__row__col__center__navbar .demos:hover .demos__hover {
+  opacity: 1;
+  visibility: visible;
+  top: 74px;
 }
 
 .header__bottom__container__nav__row__col__center__navbar span {
@@ -117,6 +132,73 @@
           align-items: center;
   font-weight: 700;
   padding: 0 20px;
+  position: relative;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  height: 100%;
+  cursor: pointer;
+}
+
+.header__bottom__container__nav__row__col__center__navbar span:hover {
+  color: #3f78e0;
+}
+
+.header__bottom__container__nav__row__col__center__navbar span .pages__hover {
+  width: 200px;
+  height: 308px;
+  background: whitesmoke;
+  z-index: 3;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 104px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.header__bottom__container__nav__row__col__center__navbar span .pages__hover ul {
+  padding: 0;
+  line-height: 33px;
+  color: #343f52;
+}
+
+.header__bottom__container__nav__row__col__center__navbar span .pages__hover ul li {
+  list-style: none;
+}
+
+.header__bottom__container__nav__row__col__center__navbar span .demos__hover {
+  width: 1290px;
+  height: 684px;
+  backdrop-filter: blur(25px) saturate(80%);
+  -webkit-backdrop-filter: blur(25px) saturate(80%);
+  background-color: rgba(17, 25, 40, 0.71);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  position: absolute;
+  z-index: 3;
+  top: 104px;
+  left: -340px;
+  opacity: 0;
+  visibility: hidden;
+  padding: 40px;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.header__bottom__container__nav__row__col__center__navbar span .demos__hover .row .col-2 {
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+  margin-bottom: 20px;
+}
+
+.header__bottom__container__nav__row__col__center__navbar span .demos__hover .row .col-2 img {
+  border-radius: 10px;
+}
+
+.header__bottom__container__nav__row__col__center__navbar span .demos__hover .row .col-2:hover {
+  margin-top: -10px;
 }
 
 .header__bottom__container__nav__row__col__center__navbar span i {
@@ -201,7 +283,10 @@
 @media (min-width: 576px) {
   .main__container__row__upper {
     padding: 0 50px;
-    background: #000;
+    top: -1.7rem;
+    left: -1.5rem;
+    -webkit-transform: translate3d(0px, 7px, 0px);
+            transform: translate3d(0px, 7px, 0px);
     background-image: url(https://img.freepik.com/free-vector/elegant-modern-halftone-background_1055-8410.jpg?t=st=1656788325~exp=1656788925~hmac=4bd78cb23b1ecc9917e7716a1ca708c8da158dbeb167268967aadded748b9321&w=740);
     background-size: contain;
     height: 597px;

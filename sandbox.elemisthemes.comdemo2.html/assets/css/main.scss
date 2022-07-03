@@ -39,6 +39,7 @@
 .header__bottom {
   height: 74px;
   width: 100%;
+  transition: 300ms ease-in-out;
 
   &__container {
     height: 100%;
@@ -66,7 +67,21 @@
           }
           &__navbar {
             display: flex;
-
+            height: 100%;
+            .pages:hover {
+              .pages__hover {
+                opacity: 1;
+                visibility: visible;
+                top: 74px;
+              }
+            }
+            .demos:hover {
+              .demos__hover {
+                opacity: 1;
+                visibility: visible;
+                top: 74px;
+              }
+            }
             span {
               font-size: 16px;
               color: #343f52;
@@ -74,6 +89,68 @@
               align-items: center;
               font-weight: 700;
               padding: 0 20px;
+              position: relative;
+              transition: 200ms ease-in-out;
+              height: 100%;
+              cursor: pointer;
+              &:hover {
+                color: #3f78e0;
+              }
+              .pages__hover {
+                width: 200px;
+                height: 308px;
+                background: whitesmoke;
+                z-index: 3;
+                padding: 20px;
+                border-radius: 10px;
+                position: absolute;
+                top: 104px;
+                opacity: 0;
+                visibility: hidden;
+
+                transition: 200ms ease-in-out;
+
+                ul {
+                  padding: 0;
+                  line-height: 33px;
+                  color: #343f52;
+                  li {
+                    list-style: none;
+                  }
+                }
+              }
+              .demos__hover {
+                width: 1290px;
+                height: 684px;
+                backdrop-filter: blur(25px) saturate(80%);
+                -webkit-backdrop-filter: blur(25px) saturate(80%);
+                background-color: rgba(17, 25, 40, 0.71);
+                border-radius: 12px;
+                border: 1px solid rgba(255, 255, 255, 0.125);
+
+                position: absolute;
+                z-index: 3;
+                top: 104px;
+                left: -340px;
+                opacity: 0;
+                visibility: hidden;
+                padding: 40px;
+                transition: 200ms ease-in-out;
+
+                .row {
+                  .col-2 {
+                    transition: 150ms ease-in-out;
+                    margin-bottom: 20px;
+                    img {
+                      border-radius: 10px;
+                    }
+                    &:hover {
+                      margin-top: -10px;
+                    }
+                  }
+                }
+              }
+
               i {
                 color: #3f78e0;
                 font-size: 10px;
@@ -135,10 +212,12 @@
 
         @media (min-width: 576px) {
           padding: 0 50px;
-          background: #000;
-
+          top: -1.7rem;
+          left: -1.5rem;
+          transform: translate3d(0px, 7px, 0px);
           background-image: url(https://img.freepik.com/free-vector/elegant-modern-halftone-background_1055-8410.jpg?t=st=1656788325~exp=1656788925~hmac=4bd78cb23b1ecc9917e7716a1ca708c8da158dbeb167268967aadded748b9321&w=740);
           background-size: contain;
+
           height: 597px;
         }
 
