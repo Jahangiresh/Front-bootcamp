@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  h1 {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .header-row {
+    .button-col {
+      button {
+        float: right;
+      }
+    }
+  }
+  .my-table {
+    margin-top: 50px;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    input {
+      margin-bottom: 20px;
+      padding: 13px;
+      background: whitesmoke;
+      outline: none;
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container h1 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.container .header-row .button-col button {
+  float: right;
+}
+
+.container .my-table {
+  margin-top: 50px;
+}
+
+.container .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .inputs input {
+  margin-bottom: 20px;
+  padding: 13px;
+  background: whitesmoke;
+  outline: none;
+  border: none;
+}
+/*# sourceMappingURL=main.css.map */
