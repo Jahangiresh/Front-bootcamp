@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.drag__list {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+
+  .drag__item {
+    height: 100%;
+    width: 100px;
+    background: #000;
+    cursor: move;
+    border-radius: 50%;
+  }
+}
+.drag__target {
+  height: 600px;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  .drag__item {
+    height: 100%;
+    width: 100%;
+    background: #000;
+    cursor: move;
+  }
+}
